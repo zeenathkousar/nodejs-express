@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<body>
+    <%- include('common/navbar'); %>
+    <h2>homepage ejs <%= locals.name%></h2>
+    <p>page user <%= locals.user.class %></p>
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+            <li><%= item %></li>
+        <% })%>
+
+        
+    </ul>
+</body>
+</html>
